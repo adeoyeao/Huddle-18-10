@@ -1,0 +1,14 @@
+.form {
+      display: grid;
+      grid-gap: 1rem;
+      margin-top: 2rem;
+      justify-items: end;
+
+      input {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            appearance: none;
+            outline: none;
+      }
+}

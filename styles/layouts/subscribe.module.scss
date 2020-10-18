@@ -1,0 +1,22 @@
+.subscribe {
+      padding: 0 10vw;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      padding-top: calc(101 / 375 * 100vw + 5rem);
+      padding-bottom: calc(53 / 375 * 100vw + 5rem);
+
+      div {
+            text-align: center;
+            display: grid;
+            grid-gap: 2rem;
+            justify-items: center;
+      }
+}
+
+@media screen and (min-width: 700px) {
+      .subscribe {
+            padding-top: calc(139 / 1440 * 100vw + 5rem);
+            padding-bottom: calc(158 / 1440 * 100vw + 5rem);
+      }
+}

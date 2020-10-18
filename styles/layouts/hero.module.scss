@@ -1,0 +1,16 @@
+.hero {
+      padding: 10rem 10vw 2rem 10vw;
+      display: grid;
+      grid-gap: 2rem;
+      text-align: center;
+      justify-items: center;
+      max-width: 100vw;
+}
+
+@media screen and (min-width: 700px) {
+      .hero {
+            padding-top: 13rem;
+            padding-bottom: 4rem;
+            grid-gap: 4rem;
+      }
+}

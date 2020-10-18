@@ -1,0 +1,22 @@
+.stat {
+      display: grid;
+      grid-gap: 0.5rem;
+
+      .stat__figure {
+            font-size: 55px
+      }
+}
+
+@media screen and (min-width: 700px) {
+      .stat {
+            &:nth-child(1) {
+                  justify-self: end;
+            }
+            &:nth-child(2) {
+                  justify-self: start;
+            }
+            .stat__figure {
+                  font-size: 80px;
+            }
+      }
+}

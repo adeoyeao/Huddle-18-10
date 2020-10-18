@@ -1,0 +1,42 @@
+.footer {
+      background: #00252E;
+      padding: 2rem 10vw;
+      position: relative;
+      display: grid;
+      grid-gap: 2rem;
+
+      &::before {
+            content: "";
+            width: 100vw;
+            height: calc(53 / 375 * 100vw);
+            display: block;
+            position: absolute;
+            background-image: url("/images/bg-footer-top-mobile.svg");
+            background-size: cover;
+            background-position: bottom;
+            left: 0;
+            top: calc(52 / 375 * -100vw)
+      }
+}
+
+@media screen and (min-width: 700px) {
+      .footer {
+            padding: 4rem 10vw;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto auto;
+            grid-gap: 4rem;
+
+            &::before {
+            content: "";
+            width: 100vw;
+            height: calc(158 / 1440 * 100vw);
+            display: block;
+            position: absolute;
+            background-image: url("/images/bg-footer-top-desktop.svg");
+            background-size: cover;
+            background-position: bottom;
+            left: 0;
+            top: calc(157 / 1440 * -100vw)
+      }
+      }
+}

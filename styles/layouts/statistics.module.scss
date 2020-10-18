@@ -1,0 +1,19 @@
+.statistics {
+      max-width: 100vw;
+      padding: 2rem 5vw;
+      display: grid;
+      grid-gap: 4rem;
+      align-items: center;
+      justify-items: center;
+
+      padding-bottom: calc(112 / 375 * 100vw);
+}
+
+@media screen and (min-width: 700px) {
+      .statistics {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25vw;
+
+            padding-bottom: calc(165 / 1440 * 100vw)
+      }
+}
